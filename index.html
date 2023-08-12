@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Integração HTML e JS</title>
+    <link rel= "stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>
+
+        const header = document.querySelector("header");
+        header.id = 'Id_Header';
+        header.insertAdjacentHTML('beforeend', '<h1 class= "Class_H1"> Exemplo de H1 dentro da Header;</h1>');
+        const main = document.querySelector("main");
+        main.id = 'Id_Main';
+        const div1 = document.createElement('div');
+        div1.id = 'Div1_Main';
+        div1.insertAdjacentHTML ('beforeend', '<h2 class = "H2_Div1"> Div Um </h2>');
+        div1.insertAdjacentHTML ('beforeend', '<p class = "P_Div1"> Este é o texto da div 1. </p>');
+        const div2 = document.createElement('div');
+        div2.id = 'Div2_Main';
+        div2.insertAdjacentHTML ('beforeend', '<h2 class = "H2_Div2"> Div Dois </h2>');
+        div2.insertAdjacentHTML ('beforeend', '<p class = "P_Div2"> Este é o texto da div 2. </p>');
+        main.appendChild(div1);
+        main.appendChild(div2);
+        const footer = document.querySelector ("footer");
+        footer.id = 'Id_Footer'
+        footer.insertAdjacentHTML ('beforeend', '<p class = "P_Footer"> Este é o texto do footer.</p>');        
+    </script>
+</body>
+</html>
